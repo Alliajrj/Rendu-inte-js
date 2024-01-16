@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header>
+			<img src="img/icons8-pokéball-100 (1).png" alt="" />
+			<h1>PokéShop</h1>
+		</header>
+
+		<nav>
+			<div>
+				<a href="#" onclick="changePage('accueil')" class="onglet">Accueil</a>
+				<a href="#" onclick="changePage('pokemons')" class="onglet">Pokédex</a>
+			</div>
+			<div>
+				<a href="#" onclick="changePage('panier')" class="onglet"
+					><img src="img/icons8-pokebag-100.png" alt=""
+				/></a>
+			</div>
+		</nav>
+		<main>
+			<div id="accueil" class="page">
+				<img class="blue" src="img/1f535.png" alt="" />
+				<img class="mac" src="img/macbutton.png" alt="" />
+				<section>
+					<div class="screen">
+						<h2>Bienvenue sur PokéShop!</h2>
+						<p>Découvrez nos Pokémons et collectez les tous !</p>
+					</div>
+				</section>
+				<a href="#pokemons" class="buttonp">Tous nos Pokémons</a>
+			</div>
+			<div id="pokemons" class="page">
+				<h2>Le Pokédex:</h2>
+				<div id="pokemon-container"></div>
+			</div>
+			<div id="panier" class="page">
+				
+			</div>
+		</main>
+		<footer>
+			<p>&copy; 2024 PokéShop. Tous droits réservés.</p>
+		</footer>
+		<script src="script.js"></script>
+	</body>
+</html>
